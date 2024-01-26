@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/white"
+    android:orientation="vertical"
+    tools:context=".DetalhesEventoActivity">
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|left"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/ib_voltar"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:background="#00D562E5"
+            android:src="@drawable/baseline_arrow_back_ios_24" />
+
+        <TextView
+            android:id="@+id/detailEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/arya_bold"
+            android:text="VER MAIS"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardImage"
+        android:layout_width="380dp"
+        android:layout_height="350dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp">
+
+
+        <!-- CardView Data-->
+
+        <ImageView
+            android:id="@+id/detailImg"
+            android:layout_width="match_parent"
+            android:layout_height="464dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/cevin" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="70dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="290dp"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="#ffffff"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp">
+
+            <!-- CardView data -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:gravity="center"
+                android:text="20"
+                android:textColor="@color/black"
+                android:textSize="40dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Jan"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/arya_bold"
+            android:text="Titulo:"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/detailTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/arya"
+            android:text="Gamboa"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/arya_bold"
+            android:text="Descrição:"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/detailDescricao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="NA cidade da Praia, pelas 00:00 horas"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/arya_bold"
+            android:text="Preço:"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/detailPreco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="2000 esc"
+            android:textSize="16sp" />
+
+
+        <Button
+            android:id="@+id/btn_adBilhete"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="40dp"
+            android:backgroundTint="#BC4D31"
+            android:drawableEnd="@drawable/box_cart"
+            android:fontFamily="@font/arya"
+            android:text="Adquirir"
+            android:paddingVertical="15dp"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            app:rippleColor="@color/pink" />
+
+    </LinearLayout>
+
+</LinearLayout>
