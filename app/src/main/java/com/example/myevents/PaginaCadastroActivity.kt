@@ -20,5 +20,9 @@ class PaginaCadastroActivity : AppCompatActivity() {
             startActivity(Intent(this, CadastroPromotorActivity::class.java))
         }
 
+        binding.voltar.setOnClickListener {
+            finish()
+        }
+
     }
 }

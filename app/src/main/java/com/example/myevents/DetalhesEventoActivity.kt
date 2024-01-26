@@ -27,5 +27,9 @@ class DetalhesEventoActivity : AppCompatActivity() {
             startActivity(Intent(this, AdquirirBilheteActivity::class.java))
         }
 
+        binding.ibVoltar.setOnClickListener {
+            finish()
+        }
+
     }
 }

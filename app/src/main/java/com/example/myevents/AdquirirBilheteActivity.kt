@@ -19,6 +19,9 @@ class AdquirirBilheteActivity : AppCompatActivity() {
         binding.btnTransfBancaria.setOnClickListener {
             startActivity(Intent(this, TrasfBancariaActivity::class.java))
         }
+        binding.voltar.setOnClickListener {
+            finish()
+        }
 
     }
 }

@@ -17,9 +17,14 @@ class CadastroClienteActivity : AppCompatActivity() {
             startActivity(Intent(this, LoginActivity::class.java))
         }
 
+        binding.voltar.setOnClickListener {
+            finish()
+        }
+
     }
 
     fun abrirPaginaCadastro(view: View){
         startActivity(Intent(this, LoginActivity::class.java))
     }
+
 }

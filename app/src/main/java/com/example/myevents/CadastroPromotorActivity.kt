@@ -16,6 +16,9 @@ class CadastroPromotorActivity : AppCompatActivity() {
         binding.btnCadastro.setOnClickListener {
             startActivity(Intent(this, LoginActivity::class.java))
         }
+        binding.voltar.setOnClickListener {
+            finish()
+        }
 
     }
 

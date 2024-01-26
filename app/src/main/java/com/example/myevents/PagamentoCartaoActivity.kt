@@ -11,7 +11,8 @@ class PagamentoCartaoActivity : AppCompatActivity() {
         binding = ActivityPagamentoCartaoBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        //abrir splash screen
-
+       binding.voltar.setOnClickListener {
+           finish()
+       }
     }
 }

@@ -8,14 +8,32 @@
     android:padding="20dp"
     tools:context=".CriarEventoActivity">
 
-    <TextView
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Eventos neste mês"
-        android:fontFamily="@font/arya"
-        android:layout_marginBottom="20dp"
-        android:textSize="25sp"
-        android:textAllCaps="true"/>
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:id="@+id/voltar"
+            android:layout_height="20dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/baseline_arrow_back_ios_24" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Eventos neste mês"
+            android:fontFamily="@font/arya"
+            android:layout_marginBottom="20dp"
+            android:textSize="25sp"
+            android:textAllCaps="true"/>
+
+
+    </LinearLayout>
+
+
 
     <CalendarView
         android:id="@+id/calendario"

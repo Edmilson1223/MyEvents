@@ -16,6 +16,9 @@ class LoginActivity : AppCompatActivity() {
         binding.btnLogin.setOnClickListener {
             startActivity(Intent(this, CriarEventoActivity::class.java))
         }
+        binding.voltar.setOnClickListener {
+            finish()
+        }
 
     }
 
