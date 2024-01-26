@@ -6,7 +6,7 @@ import android.os.Bundle
 class CriarEventoActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        /// hhhhhhhh
+        /// hhhhhhhh  kkkk
         setContentView(R.layout.activity_criar_evento)
     }
 }
