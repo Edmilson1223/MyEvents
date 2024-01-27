@@ -6,6 +6,7 @@ import android.content.ContentValues
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.provider.MediaStore
 import com.example.myevents.dataBase.DBHelper
 import com.example.myevents.databinding.ActivityCriarEventoBinding
 import java.util.Calendar
@@ -24,6 +25,7 @@ class CriarEventoActivity : AppCompatActivity() {
             intent.type = "image/*"
             startActivityForResult(intent, 0)
         }
+
 
 
         // Adiciona um listener ao botão de seleção de hora
@@ -74,5 +76,14 @@ class CriarEventoActivity : AppCompatActivity() {
         }
         binding.voltar.setOnClickListener{finish()}
 
+    }
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+
+        if (requestCode == 0 && resultCode == RESULT_OK && data != null) {
+            val selectedImage = data.data
+            val bitmap = MediaStore.Images.Media.getBitmap(this.contentResolver, selectedImage)
+            binding.uploadImg.setImageBitmap(bitmap)
+        }
     }
 }
