@@ -35,7 +35,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="685dp"
         android:orientation="vertical">
 
         <!-- Seu conteúdo aqui -->
@@ -169,17 +169,17 @@
                 android:layout_marginTop="25dp"
                 android:fontFamily="@font/arya"
                 android:text="Data do evento"
-                android:textSize="18sp"
-                android:textAllCaps="true" />
+                android:textAllCaps="true"
+                android:textSize="18sp" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btn_data_inico"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="   Selecionar data"
                 android:background="#7565BF"
-                android:padding="15dp"
                 android:drawableStart="@drawable/baseline_calendar_month_24"
+                android:padding="15dp"
+                android:text="   Selecionar data"
                 android:textColor="@color/white" />
 
             <TextView
