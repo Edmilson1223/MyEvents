@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity() {
         dados.add(ListaData("Evento1", "kbchbhcsb", 200, R.drawable.cevin))
         dados.add(ListaData("Evento2", "kvfctc", 500, R.drawable.cevin))
         dados.add(ListaData("Evento3", "ouhg", 700, R.drawable.cevin))
+        //Teste git pc Morais
 
         // Configurar o adaptador
         val adapter = ListaEventosAdapter(this, dados)
