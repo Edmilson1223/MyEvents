@@ -19,7 +19,6 @@ class MainActivity : AppCompatActivity() {
         dados.add(ListaData("Evento1", "kbchbhcsb", 200, R.drawable.cevin))
         dados.add(ListaData("Evento2", "kvfctc", 500, R.drawable.cevin))
         dados.add(ListaData("Evento3", "ouhg", 700, R.drawable.cevin))
-        //Teste git pc Morais
 
         // Configurar o adaptador
         val adapter = ListaEventosAdapter(this, dados)
@@ -29,9 +28,11 @@ class MainActivity : AppCompatActivity() {
 
         binding.listaEventos.setOnItemClickListener { parent, view, position, id ->
             // Obter o item clicado
-            val itemClicado = parent.getItemAtPosition(position).toString()
+            val itemClicado = dados[position]
             // Abrir uma nova atividade ou fazer algo com o item clicado
-            abrirDetalhes(itemClicado)
+            val intent = Intent(this, DetalhesEventoActivity::class.java)
+            intent.putExtra("evento_clicado", itemClicado)
+            startActivity(intent)
         }
 
 
@@ -46,11 +47,5 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    private fun abrirDetalhes(itemClicado: String) {
-        val intent = Intent(this, DetalhesEventoActivity::class.java)
-        intent.putExtra("evento_clicado", itemClicado)
-        intent.putExtra("dados_evento", dados)
-        startActivity(intent)
-    }
 
 }

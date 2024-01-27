@@ -12,6 +12,8 @@ class TrasfBancariaActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         //abrir splash screen
-
+        binding.voltar.setOnClickListener {
+            finish()
+        }
     }
 }

@@ -12,6 +12,8 @@ class DBHelper(context: Context) :
     // Um array de strings com os comandos SQL para criar as tabelas
     val sql = arrayOf(
         "CREATE TABLE Promotor (id INTEGER PRIMARY KEY AUTOINCREMENT, nome_promotor TEXT, cni TEXT, nif VARCHAR, email TEXT, password TEXT, nib TEXT)",
+        "INSERT INTO Promotor (nome_promotor, cni, nif, email, password, nib) VALUES ('João Silva', '123456789', '1234567890', 'joao@exemplo.com', 'senha123', '12345678901234567890')",
+        "INSERT INTO Promotor (nome_promotor, cni, nif, email, password, nib) VALUES ('João Silva', '123456789', '1234567890', 'joao@exemplo.com', 'senha123', '12345678901234567890')",
         "CREATE TABLE Evento (id INTEGER PRIMARY KEY AUTOINCREMENT, nome_evento TEXT, data_hora TIMESTAMP, local TEXT, descricao TEXT, id_promotor INTEGER, FOREIGN KEY (id_promotor) REFERENCES Promotor (id))",
         "CREATE TABLE Cliente (id INTEGER PRIMARY KEY AUTOINCREMENT, nome_cliente TEXT, username TEXT, password TEXT)",
         "CREATE TABLE Bilhete (id INTEGER PRIMARY KEY AUTOINCREMENT, preco REAL, quantidade INTEGER, total REAL, id_evento INTEGER, id_cliente INTEGER, FOREIGN KEY (id_evento) REFERENCES Evento (id), FOREIGN KEY (id_cliente) REFERENCES Cliente (id))"
