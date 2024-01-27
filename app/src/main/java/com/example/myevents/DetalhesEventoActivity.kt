@@ -30,6 +30,7 @@ class DetalhesEventoActivity : AppCompatActivity() {
         binding.ibVoltar.setOnClickListener {
             finish()
         }
+        //nn
 
     }
 }
