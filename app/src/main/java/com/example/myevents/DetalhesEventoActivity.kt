@@ -13,23 +13,20 @@ class DetalhesEventoActivity : AppCompatActivity() {
         binding = ActivityDetalhesEventoBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val dadosEvento = intent.getSerializableExtra("dados_evento") as ArrayList<ListaData>?
+        val dadosEvento = intent.getSerializableExtra("evento_clicado") as ListaData
 
-        if (dadosEvento != null) {
-            // Agora você pode usar dadosEvento para exibir os detalhes na sua atividade
-            // Exemplo: binding.textViewTitulo.text = dadosEvento[0].title
-            binding.detailTitle.text = dadosEvento[0].title
-            binding.detailDescricao.text = dadosEvento[0].desc
-
-        }
+        // Agora você pode usar dadosEvento para exibir os detalhes na sua atividade
+        // Exemplo: binding.textViewTitulo.text = dadosEvento[0].title
+        binding.detailTitle.text = dadosEvento.title
+        binding.detailDescricao.text = dadosEvento.desc
 
         binding.btnAdBilhete.setOnClickListener {
             startActivity(Intent(this, AdquirirBilheteActivity::class.java))
         }
 
-        binding.ibVoltar.setOnClickListener {
+        binding.btnVoltar.setOnClickListener {
             finish()
-        }
+           }
 
-    }
+      }
 }
