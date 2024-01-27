@@ -21,8 +21,9 @@ class DetalhesEventoActivity : AppCompatActivity() {
         binding.detailDescricao.text = dadosEvento.desc
 
         binding.btnAdBilhete.setOnClickListener {
-            startActivity(Intent(this, AdquirirBilheteActivity::class.java))
+            startActivity(Intent(this, LoginCliente::class.java))
         }
+
 
         binding.btnVoltar.setOnClickListener {
             finish()

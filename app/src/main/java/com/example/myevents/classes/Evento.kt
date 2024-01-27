@@ -1,4 +1,4 @@
-package com.example.myevents
+package com.example.myevents.classes
 
 class Evento(val id: Int = 0, var nome_evento: String = "", var data_hora: String = "", var local: String = "", var descricao: String = "", var id_promotor: Int = 0) {
     // funcao toString para apresentar os dados no Evento

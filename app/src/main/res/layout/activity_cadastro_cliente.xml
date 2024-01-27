@@ -65,6 +65,7 @@
                 android:text="Nome"
                 android:textSize="18sp" />
 
+
             <EditText
                 android:id="@+id/edit_nome"
                 android:layout_width="match_parent"
@@ -72,10 +73,8 @@
                 android:layout_marginBottom="30dp"
                 android:background="@drawable/bg_inputs"
                 android:hint="Seu nome completo"
-                android:inputType="textPassword"
                 android:padding="15dp"
                 android:textSize="15sp" />
-
 
             <TextView
                 android:layout_width="match_parent"
@@ -89,6 +88,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
+                android:inputType="textEmailAddress"
                 android:background="@drawable/bg_inputs"
                 android:hint="ex: exemplo@exemplo.com"
                 android:padding="15dp"

@@ -17,7 +17,7 @@ class PaginaCadastroActivity : AppCompatActivity() {
         }
 
         binding.btnContaPromotor.setOnClickListener {
-            startActivity(Intent(this, CadastroPromotorActivity::class.java))
+            startActivity(Intent(this, Cadastro_Promotor_compra::class.java))
         }
 
         binding.voltar.setOnClickListener {

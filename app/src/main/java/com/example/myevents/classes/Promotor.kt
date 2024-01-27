@@ -1,4 +1,4 @@
-package com.example.myevents
+package com.example.myevents.classes
 
 class Promotor(val id: Int = 0, var nome_promotor: String = "", var cni: String = "", var nif: String = "", var email: String = "", var password: String = "", var nib: String = "") {
     // funcao toString para apresentar os dados no Promotor

@@ -1,4 +1,4 @@
-package com.example.myevents
+package com.example.myevents.classes
 
 class Bilhete(val id: Int = 0, var preco: Double = 0.0, var quantidade: Int = 0, var total: Double = 0.0, var id_evento: Int = 0, var id_cliente: Int = 0) {
     // funcao toString para apresentar os dados no Bilhete
